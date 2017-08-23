@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="quizApp" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Quiz Application</title>
+    <!-- You may wish to bundle and minify in your project. It is not bundled and minified here to keep things simple here. -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />-->
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-sanitize.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/angularfire.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/humanize-duration.js"></script>
+    <script src="js/timer.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/helperService.js"></script>
+    <script src="app/quizCtrl.js"></script>
+    <script src="app/createCtrl.js"></script>
+    <script src="app/reviewCtrl.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div ng-view></div>
+    </div>
+</body>
+</html>

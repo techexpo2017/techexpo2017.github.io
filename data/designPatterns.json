@@ -1,0 +1,216 @@
+{
+    "quiz": {
+        "Id": 3,
+        "name": "Performance Engineering",
+        "description": "Performance Engineering Quiz including solid principles."
+    },
+    "questions": [{
+        "Id": 1010,
+        "Name": "Which of the below metric is called throughput?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Hits/sec", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Transactions/sec", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Error rate", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Response time", "IsAnswer": false }],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+    },
+    {
+        "Id": 1011,
+        "Name": "Which of the testing is typically conducted to identify memory leak?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Load Testing", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Long Duration testing", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Spike Testing", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Volume Testing", "IsAnswer": false }],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+    },
+    {
+        "Id": 1012,
+        "Name": "Using Content Delivery Network(CDN) for static images will increase the performance?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "False", "IsAnswer": false }],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+    },
+    {
+        "Id": 1013,
+        "Name": "Which of the below is false about performance testing?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Performance testing is done to validate  the behavior of the system at various load conditions", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "To verify the functional accuracy of the software", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Several users perform desired operations", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Requires close to production ", "IsAnswer": false }],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+    },
+    {
+        "Id": 1014,
+        "Name": "Which type of testing is done to understand at which level the application crashes?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Load testing", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Long Duration Testing", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Spike Testing", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Volume Testing", "IsAnswer": false }],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+    },
+    {
+        "Id": 1015,
+        "Name": "Response time and TPS(throughput) are directly proportional",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "False", "IsAnswer": true }],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+    },
+    {
+        "Id": 1016,
+        "Name": "Which of the following law is considered to be the fundamental for arriving the user model in performance testing?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Stuart's Law", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Little's Law", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Anchor's Law", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Winsley's Law", "IsAnswer": false }],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+    },
+    {
+        "Id": 1017,
+        "Name": "Which of the tool is used for load testing?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Selenium", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Jmeter", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Appium", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Silk Test", "IsAnswer": false }],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+    },
+    {
+        "Id": 1018,
+        "Name": "What are the sub-genres of load and performance testing?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Load Testing", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Stress Testing", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Long Duration Testing", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All the above", "IsAnswer": true }],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+    },
+    {
+        "Id": 1019,
+        "Name": "Find the key performance metrics",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Response Time", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Throughput", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "CPU utilized", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All the above", "IsAnswer": true }],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+    },
+        {
+            "Id": 1019,
+            "Name": "It is possible to run a test in PTaaS without Jmeter script",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "False", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "Which version of Jmeter does PTaaS support?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "Jmeter 2.13", "IsAnswer": true },
+                { "Id": 1056, "QuestionId": 1010, "Name": "Jmeter 2.11", "IsAnswer": false },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Jmeter 2.9", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Jmeter 3", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "It is possible to monitor more than one application / stage in PTaaS",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
+                { "Id": 1058, "QuestionId": 1010, "Name": "False", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "What are all the tech stacks that PTaaS supports?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "Raptor", "IsAnswer": false },
+                { "Id": 1056, "QuestionId": 1010, "Name": "C++", "IsAnswer": false },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Node", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "All the above", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "Can we dedect Memory leak in applications using PTaaS?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
+                { "Id": 1058, "QuestionId": 1010, "Name": "False", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "Can we do profiling for the required components in PTaaS?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
+                { "Id": 1058, "QuestionId": 1010, "Name": "False", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "When was the highest traffic observed for last year?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "Christmas Day", "IsAnswer": false },
+                { "Id": 1056, "QuestionId": 1010, "Name": "New Year Day", "IsAnswer": false },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Cyber Monday", "IsAnswer": true },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Black Friday", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "What is the highest Payments processed per second by Paypal last year?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "100-200", "IsAnswer": false },
+                { "Id": 1056, "QuestionId": 1010, "Name": "200-300", "IsAnswer": false },
+                { "Id": 1057, "QuestionId": 1010, "Name": "300-400", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "400-500", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "Which of the Paypal’s framework utility is used to log the activities like SLQ statements, Connections,RPC calls?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "Spotlight", "IsAnswer": false },
+                { "Id": 1056, "QuestionId": 1010, "Name": "CAL", "IsAnswer": true },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Appdynamics", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Jmeter", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "Which is a unified monitoring platform providing capabilities to monitor and manage availability of Applications, Systems, and Infrastructure in real-time so developers act quickly to resolve site issues, thus providing a better experience to PayPal customers, and better business performance",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "CAL", "IsAnswer": false },
+                { "Id": 1056, "QuestionId": 1010, "Name": "Sherlock", "IsAnswer": true },
+                { "Id": 1057, "QuestionId": 1010, "Name": "JMeter", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "PTaaS", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        }
+    ]
+}

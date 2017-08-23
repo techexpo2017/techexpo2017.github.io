@@ -1,0 +1,133 @@
+﻿<div class="ques-container">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="javascript:void(0)">Welcome {{userName}}!</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-show="mode=='quiz' || mode=='review'" class="active pull-right"><a href="javascript:void(0)">Question : {{currentPage}} / {{totalItems}}</a></li>
+                <li ng-show="mode=='feedback'" class="active pull-right"><a href="javascript:void(0)">Feedback</a></li>
+                <li ng-show="mode=='result'" class="active pull-right"><a href="javascript:void(0)">Result</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--<div class="header">-->
+    <!--<div class="row">-->
+    <!--<div class="col-md-8">-->
+    <!--<h3>Welcome {{userName}}!</h3>-->
+    <!--</div>-->
+    <!--<div class="col-md-4 header-right">-->
+    <!--&lt;!&ndash; In actual application, you may wish to load the quiz List using angular service. &ndash;&gt;-->
+    <!--Select Quiz: -->
+    <!--<select id="quizList" ng-model="quizName" ng-change="loadQuiz(quizName)">-->
+    <!--<option value="data/aspnet.js">Asp.Net</option>-->
+    <!--<option value="data/csharp.js">C Sharp</option>-->
+    <!--<option value="data/designPatterns.json">Design Patterns</option>-->
+    <!--</select>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<hr/>-->
+    <!--</div>-->
+
+
+    <div id="quiz">
+        <h4 class="row-fluid" style="text-align: center;"><span class="alert alert-danger col-md-12" ng-show="mode == 'feedback' && timedout">Oops!! Timed Out. Your answers were auto-submitted</span></h4>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 ng-show="mode=='quiz' || mode=='review'" class="center">{{quiz.name}}</h1>
+                <h1 ng-show="mode=='feedback'" class="center">Almost there!!</h1>
+                <h1 ng-show="mode=='result'" class="center">Test Result : {{totalCorrectAnswers}} / {{defaultConfig.totalQuestions}}</h1>
+                <div ng-show="mode!='result'" style="text-align: center"><div  class="btn btn-default btn-sm" disabled><i>Do Not refresh the page</i></div></div>
+                <hr />
+            </div>
+        </div>
+
+        <div ng-show="mode=='quiz' || mode=='review'" class="pull-right btn {{timerColor}}"><timer countdown="120" interval="1000" finish-callback="finished()">{{countdown}} second{{secondsS}}</timer></div>
+        <div ng-show="mode=='quiz'">
+            <div ng-repeat="question in filteredQuestions">
+                <!--<div class="label label-warning">Question {{currentPage}} of {{totalItems}}.</div>-->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>{{currentPage}}. <span ng-bind-html="question.Name"></span></h2>
+                    </div>
+                </div>
+                <div class="row text-left options">
+                    <div class="col-md-6" ng-repeat="option in question.Options">
+                        <div class="option">
+                            <label class="" for="{{option.Id}}">
+                                <input id="{{option.Id}}" type="checkbox" ng-model="option.Selected" ng-change="onSelect(question, option);" /> {{option.Name}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="quizNav">
+                <div>
+                    <button class="btn btn-default" ng-show="config.allowBack" ng-click="goTo(1);">First</button>
+                    <button class="btn btn-default" ng-show="config.allowBack" ng-click="goTo(currentPage - 1);">Prev</button>
+                    <button class="btn btn-default" ng-click="goTo(currentPage + 1);">Next</button>
+                    <button class="btn btn-default" ng-show="config.allowBack" ng-click="goTo(totalItems);">Last</button>
+                </div>
+                <!--<br />-->
+                <!--<pagination ng-show="config.showPager" direction-links="false" total-items="totalItems" items-per-page="itemsPerPage" ng-model="currentPage" ng-change="pageChanged()"></pagination>-->
+            </div>
+        </div>
+        <div class="row review" ng-show="mode=='review'">
+            <div class="col-md-12" style="padding-top: 2%;">
+                <div class="col-sm-4" ng-repeat="question in questions">
+                    <div ng-click="goTo($index + 1)" class="{{ isAnswered($index) == 'Answered'? 'answered': 'not-answered' }}">{{$index + 1}}. {{ isAnswered($index) }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="row feedback" ng-show="mode=='feedback'">
+            <h3 style="text-align: center">Please provide your constructive feedback about PTaaS & LnP services and stand a chance to win an exciting goodie</h3>
+
+
+            <form name="feedbackForm" ng-submit="onSubmit()" novalidate>
+                <div class="form-group" ng-class="{ 'has-error' : feedbackForm.subject.$invalid && !feedbackForm.subject.$pristine }">
+                    <textarea type="text" id="subject" name="subject" placeholder="We are looking forward to hear from you!!" ng-model="feedback.subject" required></textarea>
+                    <p ng-show="feedbackForm.feedback.subject.$invalid && !feedbackForm.feedback.subject.$pristine" class="help-block">We are looking forward to your feedback</p>
+                </div>
+                <!--<div class="form-group">-->
+                    <!--<textarea name="message" type="text" id="message" placeholder="Message" ng-model="feedback.message"></textarea>-->
+
+                <!--</div>-->
+                <input type="submit" class="btn btn-info" ng-disabled="feedbackForm.$invalid">
+            </form>
+        </div>
+
+        <div class="result" ng-show="mode=='result'">
+            <h3 ng-show="totalCorrectAnswers == defaultConfig.totalQuestions" style="text-align: center; color: green">Wow! That was awesome. You hit it all. <br><br> Please grab your special goody from the stall <br> Have a Great day!!</h3>
+            <h3 ng-show="totalCorrectAnswers < defaultConfig.totalQuestions" style="text-align: center; color: orange"><i>Alas, You missed <b>{{defaultConfig.totalQuestions - totalCorrectAnswers}}</b> hits. <br><br>Anyways, Thanks for taking time to participate. We appreciate it. <br> Have a Great day!!</i></h3>
+
+            <hr>
+            <h2 class="" style="text-align: center; padding-bottom: 1%"><div class="btn alert-info btn-lg btn-block orange" style="text-align: center; font-weight: 700;">Our nation rocks!! Let's be proud, We are TAX PAYERS :)</div></h2>
+            <h2 class="" style="text-align: center;"><div class="btn alert-info btn-lg btn-block green" style="text-align: center; font-weight: 700;">Don't forget to exchange your 500 & 1000 rs notes by Dec 30th 2016</div></h2>
+            <!--<h2>Quiz Result</h2>-->
+            <!--<div ng-repeat="question in questions">-->
+                <!--<div class="result-question">-->
+                    <!--<h4>{{$index + 1}}. {{question.Name}}</h4>-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-md-6" ng-repeat="Option in question.Options">-->
+                            <!--<div>-->
+                                <!--<input id="{{Option.Id}}" type="checkbox" disabled="disabled" ng-model="Option.Selected" /> {{Option.Name}}-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<h4 class="alert {{ isCorrect(question) == 'correct'? 'alert-success': 'alert-danger'}}">Your answer is {{isCorrect(question)}}.</h4>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <hr />
+        <div class="" ng-show="mode!='result' && mode!='feedback'" >
+            <button class="btn btn-default" ng-click="mode = 'quiz'">Quiz</button>
+            <button class="btn btn-default" ng-click="mode = 'review'">Review</button>
+            <button class="btn btn-success" ng-click="onSubmit();">Submit Quiz</button>
+        </div>
+    </div>
+
+</div>
+

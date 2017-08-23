@@ -1,0 +1,52 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--<meta charset="UTF-8">-->
+<!--<title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="text-center">Welcome to 90 secs challenge!!</h1>
+            <p class="text-muted" style="text-align: center">Note : <i>Re-attempt is not allowed</i></p>
+        </div>
+        <div class="modal-body">
+            <div ng-show="isInvalidUser" style="padding-bottom: 7%">
+                <div class="btn alert-danger col-md-12 col-sm-12 col-lg-12" disabled>Sorry! Reattempt is not allowed.</div>
+            </div>
+            <form name="myForm" ng-submit="startTest()" novalidate>
+                <!--<div class="form-group" ng-class="{ 'has-error' : myForm.user.$invalid && !myForm.user.$pristine }">-->
+                    <!--<input type="text" class="form-control input-lg" placeholder="CorpId" name="user"-->
+                           <!--ng-model="userName" required/>-->
+                    <!--<p ng-show="myForm.user.$invalid && !myForm.user.$pristine" class="help-block">Username is-->
+                        <!--required.</p>-->
+                <!--</div>-->
+
+
+                <div class="form-group" ng-class="{ 'has-error' : myForm.user.$invalid && !myForm.user.$pristine }">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control input-lg" placeholder="CorpId" name="user"
+                               ng-model="userName" aria-describedby="basic-addon2" ng-pattern="/^[a-zA-Z0-9]*$/" required/>
+                        <span class="input-group-addon" id="basic-addon2">@paypal.com</span>
+                    </div>
+                    <p ng-show="myForm.user.$error.required && !myForm.user.$pristine" class="help-block col-md-12">
+                        Username is required.</p>
+                    <p ng-show="myForm.user.$error.pattern && !myForm.user.$pristine" class="help-block col-md-12">
+                        Please enter a valid corpId</p>
+                </div>
+
+
+                <input type="submit" class="btn btn-block btn-lg btn-primary" value="Start Quiz"
+                       ng-disabled="myForm.$invalid"/>
+                <!--<hr><h3 class="text-muted" style="text-align: center; color:rgba(255, 34, 34, 0.82)"> 5 simple questions in 90 secs. Game on?!</h3>-->
+            </form>
+            <div ng-show="loader" style="text-align: center">
+                <div style="display: inline-block" class="loader"></div>
+            </div>
+        </div>
+    </div>
+</div>

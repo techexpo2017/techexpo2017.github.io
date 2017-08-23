@@ -1,0 +1,20 @@
+<div class="ques-container">
+    <h1>Total Users : <span ng-bind="users.length"></span></h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>User Name</th>
+            <th>Quiz Score</th>
+            <th>Feedback</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="user in users">
+            <td>{{user.userName}}</td>
+            <td>{{user.score}}</td>
+            <td>{{user.feedback.subject}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
