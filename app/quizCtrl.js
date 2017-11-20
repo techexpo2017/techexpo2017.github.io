@@ -24,7 +24,7 @@
         'showClock': false,
         'showPager': true,
         'theme': 'none',
-        'totalQuestions' : 3
+        'totalQuestions' : 4
     };
     $scope.totalCorrectAnswers = $scope.defaultConfig.totalQuestions;
 

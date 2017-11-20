@@ -43,7 +43,7 @@
             </div>
         </div>
 
-        <div ng-show="mode=='quiz' || mode=='review'" class="pull-right btn btn-block {{timerColor}}"><timer countdown="120" interval="1000" finish-callback="finished()">{{countdown}} second{{secondsS}}</timer></div>
+        <div ng-show="mode=='quiz' || mode=='review'" class="pull-right btn btn-block {{timerColor}}"><timer countdown="60" interval="1000" finish-callback="finished()">{{countdown}} second{{secondsS}}</timer></div>
         <div ng-show="mode=='quiz'">
             <div ng-repeat="question in filteredQuestions">
                 <!--<div class="label label-warning">Question {{currentPage}} of {{totalItems}}.</div>-->
