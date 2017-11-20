@@ -1,8 +1,8 @@
 {
     "quiz": {
         "Id": 3,
-        "name": "Performance Engineering",
-        "description": "Performance Engineering Quiz including solid principles."
+        "name": "CPI & PPWC - Customer Champions",
+        "description": "CPI & PPWC - Customer Champions"
     },
     "questions": [{
         "Id": 1010,
@@ -274,6 +274,101 @@
                 { "Id": 1142, "QuestionId": 1035, "Name": "JMeter", "IsAnswer": false },
                 { "Id": 1143, "QuestionId": 1035, "Name": "PTaaS", "IsAnswer": false },
                 { "Id": 1144, "QuestionId": 1035, "Name": "All of the above", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "Which of the Paypal’s framework utility is used to log the activities like SLQ statements, Connections,RPC calls?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "Spotlight", "IsAnswer": false },
+                { "Id": 1056, "QuestionId": 1010, "Name": "CAL", "IsAnswer": true },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Appdynamics", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Jmeter", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "Which is a unified monitoring platform providing capabilities to monitor and manage availability of Applications, Systems, and Infrastructure in real-time so developers act quickly to resolve site issues, thus providing a better experience to PayPal customers, and better business performance",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "CAL", "IsAnswer": false },
+                { "Id": 1056, "QuestionId": 1010, "Name": "Sherlock", "IsAnswer": true },
+                { "Id": 1057, "QuestionId": 1010, "Name": "JMeter", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "PTaaS", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+
+
+        {
+            "Id": 1019,
+            "Name": "How do you find the Service Version on MS Environments ?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "service version <service-name> <env>", "IsAnswer": false },
+                { "Id": 1056, "QuestionId": 1010, "Name": "sv <service-name> <env>", "IsAnswer": true },
+                { "Id": 1057, "QuestionId": 1010, "Name": "<service-name> version <env>", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "CAL", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "How do you find the boxes hosting a service on MS Environments ?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "service version <service-name> <env>", "IsAnswer": false },
+                { "Id": 1056, "QuestionId": 1010, "Name": "sv <service-name> <env>", "IsAnswer": true },
+                { "Id": 1057, "QuestionId": 1010, "Name": "<service-name> version <env>", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "CAL", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "Can you do deploy a custom build on MSM/MSR ?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": false },
+                { "Id": 1056, "QuestionId": 1010, "Name": "False", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "Is PPMiR supported on MSM ?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
+                { "Id": 1056, "QuestionId": 1010, "Name": "False", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "How do you find the publishers for a AMQ in MS ?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "No SSH Access to Check", "IsAnswer": false },
+                { "Id": 1056, "QuestionId": 1010, "Name": "Using JAWS", "IsAnswer": false },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Using cyclopsd API's", "IsAnswer": true },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Ask Support to share the Logs", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "How do you make sure things are wired together on a User Stage and are working with components on MS?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "Check Haproxy File", "IsAnswer": false },
+                { "Id": 1056, "QuestionId": 1010, "Name": "Slack command validate_us", "IsAnswer": true },
+                { "Id": 1057, "QuestionId": 1010, "Name": "Using cyclopsd API's", "IsAnswer": false },
+                { "Id": 1058, "QuestionId": 1010, "Name": "Ask Support to share the Logs", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1019,
+            "Name": "To Test AMQ on a user stage you also need to deploy the publisher components ?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
+                { "Id": 1056, "QuestionId": 1010, "Name": "False", "IsAnswer": false }],
             "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
         }
     ]
