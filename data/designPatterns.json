@@ -276,6 +276,63 @@
                 { "Id": 1144, "QuestionId": 1035, "Name": "All of the above", "IsAnswer": true }],
             "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
         },
+
+        {
+            "Id": 1036,
+            "Name": "What is the tool that tells the tracking instrumentations available in a page?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1145, "QuestionId": 1036, "Name": "Web", "IsAnswer": false },
+                { "Id": 1146, "QuestionId": 1036, "Name": "Spider", "IsAnswer": true },
+                { "Id": 1147, "QuestionId": 1036, "Name": "Crawler", "IsAnswer": false },
+                { "Id": 1148, "QuestionId": 1036, "Name": "Search", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1037,
+            "Name": "What is the Single source of truth for all tags applicable for tracking instrumentation?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1149, "QuestionId": 1037, "Name": "FPTIWeb", "IsAnswer": false },
+                { "Id": 1150, "QuestionId": 1037, "Name": "FPTIGov", "IsAnswer": true },
+                { "Id": 1151, "QuestionId": 1037, "Name": "FPTISearch", "IsAnswer": false },
+                { "Id": 1152, "QuestionId": 1037, "Name": "FPTITags", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1038,
+            "Name": "What is PayPals Analytics Tool?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1153, "QuestionId": 1038, "Name": "Herald", "IsAnswer": true },
+                { "Id": 1154, "QuestionId": 1038, "Name": "Superset", "IsAnswer": false },
+                { "Id": 1155, "QuestionId": 1038, "Name": "Spider", "IsAnswer": false },
+                { "Id": 1156, "QuestionId": 1038, "Name": "Pivot", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1039,
+            "Name": "What is the Jenkins plugin for validating tracking instrumentation?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1157, "QuestionId": 1039, "Name": "Spyglass", "IsAnswer": true },
+                { "Id": 1158, "QuestionId": 1039, "Name": "iSpy", "IsAnswer": false },
+                { "Id": 1159, "QuestionId": 1039, "Name": "Groovy", "IsAnswer": false },
+                { "Id": 1160, "QuestionId": 1039, "Name": "All of the above", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1040,
+            "Name": "Analytics that's not available in herlad?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1161, "QuestionId": 1040, "Name": "Reports", "IsAnswer": false },
+                { "Id": 1162, "QuestionId": 1040, "Name": "CPL", "IsAnswer": false },
+                { "Id": 1163, "QuestionId": 1040, "Name": "Page Flow", "IsAnswer": false },
+                { "Id": 1164, "QuestionId": 1040, "Name": "XO-Conversion", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },                    
+        
         {
             "Id": 1019,
             "Name": "Which of the Paypal’s framework utility is used to log the activities like SLQ statements, Connections,RPC calls?",
