@@ -43,6 +43,7 @@
             </div>
         </div>
 
+        <div ng-show="mode=='quiz' || mode=='review'" class="pull-right btn btn-block btn-bg btn-success">Question : {{currentPage}} / {{totalItems}}</div>
         <div ng-show="mode=='quiz' || mode=='review'" class="pull-right btn btn-block {{timerColor}}"><timer countdown="60" interval="1000" finish-callback="finished()">{{countdown}} second{{secondsS}}</timer></div>
         <div ng-show="mode=='quiz'">
             <div ng-repeat="question in filteredQuestions">
@@ -83,7 +84,7 @@
             </div>
         </div>
         <div class="row feedback" ng-show="mode=='feedback'">
-            <h3 style="text-align: center">Please provide your constructive feedback about PTaaS & LnP services and stand a chance to win an exciting goodie</h3>
+            <h3 style="text-align: center">Please provide your constructive feedback about product & services and stand a chance to win an exciting goodie</h3>
 
 
             <form name="feedbackForm" ng-submit="onSubmit()" novalidate>
@@ -100,8 +101,8 @@
         </div>
 
         <div class="result" ng-show="mode=='result'">
-            <h3 ng-show="totalCorrectAnswers == defaultConfig.totalQuestions" style="text-align: center; color: green">Wow! That was awesome. You hit it all. <br><br> Please grab your special goody from the stall <br> Have a Great day!!</h3>
-            <h3 ng-show="totalCorrectAnswers < defaultConfig.totalQuestions" style="text-align: center; color: orange"><i>Alas, You missed <b>{{defaultConfig.totalQuestions - totalCorrectAnswers}}</b> hits. <br><br>Anyways, Thanks for taking time to participate. We appreciate it. <br> Have a Great day!!</i></h3>
+            <h3 ng-show="totalCorrectAnswers == defaultConfig.totalQuestions" style="text-align: center; color: green">All correct. Wow! That was awesome. <br><br> Please grab your gift from "Customer Champions" stall. You ALSO stand a chance to win Bonanza / Mega Bonanza gift.<br> Have a Great day!!</h3>
+            <h3 ng-show="totalCorrectAnswers < defaultConfig.totalQuestions" style="text-align: center; color: orange"><i>Alas, You missed <b>{{defaultConfig.totalQuestions - totalCorrectAnswers}}</b> hits. <br><br>Anyways, Thanks for participating. Good news, you still stand a chance to win a bonanza gift. <br> Have a Great day!!</i></h3>
 
             <hr>
             <!-- <h2 class="" style="text-align: center; padding-bottom: 1%"><div class="btn alert-info btn-lg btn-block orange" style="text-align: center; font-weight: 700;">Our nation rocks!! Let's be proud, We are TAX PAYERS :)</div></h2>
