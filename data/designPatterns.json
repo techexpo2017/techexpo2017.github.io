@@ -4,7 +4,7 @@
         "name": "Customer Champions - CPI & PPWC",
         "description": "Customer Champions - CPI & PPWC"
     },
-    "questions": [{
+    "questions": [ {
         "Id": 1010,
         "Name": "Which of the below metric is called throughput?",
         "QuestionTypeId": 1,
@@ -298,8 +298,6 @@
                 { "Id": 1058, "QuestionId": 1010, "Name": "PTaaS", "IsAnswer": false }],
             "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
         },
-
-
         {
             "Id": 1019,
             "Name": "How do you find the Service Version on MS Environments ?",
@@ -369,6 +367,283 @@
             "Options": [
                 { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
                 { "Id": 1056, "QuestionId": 1010, "Name": "False", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+
+            "Id": 1101,
+            "Name": "Currently in how many countries PPWC loan is offered?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1201, "QuestionId": 1101, "Name": "1", "IsAnswer": false },
+                { "Id": 1202, "QuestionId": 1101, "Name": "3", "IsAnswer": true },
+                { "Id": 1203, "QuestionId": 1101, "Name": "2", "IsAnswer": false },
+                { "Id": 1204, "QuestionId": 1101, "Name": "4", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1102,
+            "Name": "What is PayPal Working Capital UK name?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1205, "QuestionId": 1102, "Name": "Business Credit", "IsAnswer": false },
+                { "Id": 1206, "QuestionId": 1102, "Name": "Working Capital", "IsAnswer": false },
+                { "Id": 1207, "QuestionId": 1102, "Name": "Cash Advnace", "IsAnswer": true },
+                { "Id": 1208, "QuestionId": 1102, "Name": "Business Kredit", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1103,
+            "Name": "What is the maximum amount PayPal offers merchant for his first Loan?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1209, "QuestionId": 1103, "Name": "95K", "IsAnswer": false },
+                { "Id": 1210, "QuestionId": 1103, "Name": "97K", "IsAnswer": true },
+                { "Id": 1211, "QuestionId": 1103, "Name": "125K", "IsAnswer": false },
+                { "Id": 1212, "QuestionId": 1103, "Name": "100K", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1104,
+            "Name": "Which third party vendor PayPal uses for instant decision on merchant credit?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1213, "QuestionId": 1104, "Name": "Halifax", "IsAnswer": false },
+                { "Id": 1214, "QuestionId": 1104, "Name": "American Credit", "IsAnswer": false },
+                { "Id": 1215, "QuestionId": 1104, "Name": "Zoot", "IsAnswer": true },
+                { "Id": 1216, "QuestionId": 1104, "Name": "Lloyds", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1105,
+            "Name": "Minimum repayment % for PPWC sale transactions is ...............",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1217, "QuestionId": 1105, "Name": "5%", "IsAnswer": false },
+                { "Id": 1218, "QuestionId": 1105, "Name": "10%", "IsAnswer": true },
+                { "Id": 1219, "QuestionId": 1105, "Name": "12%", "IsAnswer": false },
+                { "Id": 1220, "QuestionId": 1105, "Name": "15%", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1106,
+            "Name": "Maximum how many open loans can a merchant have?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1221, "QuestionId": 1106, "Name": "1", "IsAnswer": true },
+                { "Id": 1222, "QuestionId": 1106, "Name": "2", "IsAnswer": false },
+                { "Id": 1223, "QuestionId": 1106, "Name": "3", "IsAnswer": false },
+                { "Id": 1224, "QuestionId": 1106, "Name": "5", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1107,
+            "Name": "To be eligible for PPWC loan merchant has to be with PayPal for at least .............",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1225, "QuestionId": 1107, "Name": "9 years", "IsAnswer": false },
+                { "Id": 1226, "QuestionId": 1107, "Name": "6 months", "IsAnswer": false },
+                { "Id": 1227, "QuestionId": 1107, "Name": "3 months", "IsAnswer": true },
+                { "Id": 1228, "QuestionId": 1107, "Name": "1 month", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1108,
+            "Name": "How PayPal collects interest for loans from merchant?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1229, "QuestionId": 1108, "Name": "One time fee", "IsAnswer": true },
+                { "Id": 1230, "QuestionId": 1108, "Name": "On fixed interest rate", "IsAnswer": false },
+                { "Id": 1231, "QuestionId": 1108, "Name": "EMI", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1109,
+            "Name": "Does PayPal need business documents to provide loans to merchant?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1233, "QuestionId": 1109, "Name": "Yes", "IsAnswer": false },
+                { "Id": 1234, "QuestionId": 1109, "Name": "No", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1110,
+            "Name": "After submitting business information how much time PayPal need to fund loan to merchant?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1237, "QuestionId": 1110, "Name": "1 working day", "IsAnswer": false },
+                { "Id": 1238, "QuestionId": 1110, "Name": "Within a day", "IsAnswer": false },
+                { "Id": 1239, "QuestionId": 1110, "Name": "Within an hour", "IsAnswer": false },
+                { "Id": 1240, "QuestionId": 1110, "Name": "Instantaneous", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1111,
+            "Name": "Which of the following country PPWC is expanding to in 2018?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1241, "QuestionId": 1111, "Name": "Canada", "IsAnswer": false },
+                { "Id": 1242, "QuestionId": 1111, "Name": "Germany", "IsAnswer": true },
+                { "Id": 1243, "QuestionId": 1111, "Name": "China", "IsAnswer": false },
+                { "Id": 1244, "QuestionId": 1111, "Name": "Singapore", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1112,
+            "Name": "PPWC will take repayment percent from all transactions",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1245, "QuestionId": 1112, "Name": "True", "IsAnswer": false },
+                { "Id": 1246, "QuestionId": 1112, "Name": "False", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1113,
+            "Name": "Is PayPal Working Capital providing loans to only merchants with PayPal account?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1249, "QuestionId": 1113, "Name": "Yes", "IsAnswer": true },
+                { "Id": 1250, "QuestionId": 1113, "Name": "No", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1114,
+            "Name": "Single merchants with multiple business offered multiple loans",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1253, "QuestionId": 1114, "Name": "True", "IsAnswer": true },
+                { "Id": 1254, "QuestionId": 1114, "Name": "false", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1115,
+            "Name": "Is the loan transfer option is made available to merchant from one business to other business?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1257, "QuestionId": 1115, "Name": "Yes", "IsAnswer": true },
+                { "Id": 1258, "QuestionId": 1115, "Name": "No", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1116,
+            "Name": "Is PPWC loan offered for personal use?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1261, "QuestionId": 1116, "Name": "Yes", "IsAnswer": false },
+                { "Id": 1262, "QuestionId": 1116, "Name": "No", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1117,
+            "Name": "After how many days PayPal starts taking repayments from merchant?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1265, "QuestionId": 1117, "Name": "After 1 day", "IsAnswer": false },
+                { "Id": 1266, "QuestionId": 1117, "Name": "After 3 days", "IsAnswer": true },
+                { "Id": 1267, "QuestionId": 1117, "Name": "After 1 week", "IsAnswer": false },
+                { "Id": 1268, "QuestionId": 1117, "Name": "After 1 month", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1118,
+            "Name": "Does PayPal do in person business verification?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1269, "QuestionId": 1118, "Name": "Yes", "IsAnswer": false },
+                { "Id": 1270, "QuestionId": 1118, "Name": "No", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1119,
+            "Name": "PayPal collects monthly EMI from merchant for the loans",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1273, "QuestionId": 1119, "Name": "True", "IsAnswer": false },
+                { "Id": 1274, "QuestionId": 1119, "Name": "fasle", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1120,
+            "Name": "Is merchant allowed to change his repayment percentage for his existing active loan himself?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1277, "QuestionId": 1120, "Name": "Yes", "IsAnswer": false },
+                { "Id": 1278, "QuestionId": 1120, "Name": "No", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1121,
+            "Name": "PayPal collects repayments on sales transactions ……………",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1281, "QuestionId": 1121, "Name": "At end of the day", "IsAnswer": false },
+                { "Id": 1282, "QuestionId": 1121, "Name": "At the time sales transaction", "IsAnswer": false },
+                { "Id": 1283, "QuestionId": 1121, "Name": "Both A and B", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1122,
+            "Name": "Will merchants credit score be affected for use of PPWC?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1285, "QuestionId": 1122, "Name": "Yes", "IsAnswer": false },
+                { "Id": 1286, "QuestionId": 1122, "Name": "No", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1123,
+            "Name": "Is merchant is allowed to do part payments manually?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1289, "QuestionId": 1123, "Name": "Yes", "IsAnswer": true },
+                { "Id": 1290, "QuestionId": 1123, "Name": "No", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1124,
+            "Name": "Will fixed fee change if I do some manual part payment?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1293, "QuestionId": 1124, "Name": "Yes", "IsAnswer": false },
+                { "Id": 1294, "QuestionId": 1124, "Name": "No", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1125,
+            "Name": "Are we supporting multiple currencies for single business?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1297, "QuestionId": 1125, "Name": "Yes", "IsAnswer": true },
+                { "Id": 1298, "QuestionId": 1125, "Name": "No", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1126,
+            "Name": "When merchant can take another loan?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1301, "QuestionId": 1126, "Name": "Immediately after previous loan pay off", "IsAnswer": false },
+                { "Id": 1302, "QuestionId": 1126, "Name": "After 1 day of payoff", "IsAnswer": false },
+                { "Id": 1303, "QuestionId": 1126, "Name": "After 3 days of payoff", "IsAnswer": true },
+                { "Id": 1304, "QuestionId": 1126, "Name": "Anytime", "IsAnswer": false }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1127,
+            "Name": "Can merchant take another loan from another provider when he has active PPWC loan?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1305, "QuestionId": 1127, "Name": "Yes", "IsAnswer": false },
+                { "Id": 1306, "QuestionId": 1127, "Name": "No", "IsAnswer": true }],
+            "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
+        },
+        {
+            "Id": 1128,
+            "Name": "Is merchant automatically eligible for new loan if he pays off all his previous loans?",
+            "QuestionTypeId": 1,
+            "Options": [
+                { "Id": 1309, "QuestionId": 1128, "Name": "Yes", "IsAnswer": false },
+                { "Id": 1310, "QuestionId": 1128, "Name": "No", "IsAnswer": true }],
             "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
         }
     ]
