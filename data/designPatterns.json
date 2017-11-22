@@ -186,8 +186,8 @@
             "Options": [
                 { "Id": 1111, "QuestionId": 1027, "Name": "100-200", "IsAnswer": false },
                 { "Id": 1112, "QuestionId": 1027, "Name": "200-300", "IsAnswer": false },
-                { "Id": 1113, "QuestionId": 1027, "Name": "300-400", "IsAnswer": false },
-                { "Id": 1114, "QuestionId": 1027, "Name": "800-900", "IsAnswer": true }],
+                { "Id": 1113, "QuestionId": 1027, "Name": "300-400", "IsAnswer": true },
+                { "Id": 1114, "QuestionId": 1027, "Name": "800-900", "IsAnswer": false }],
             "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true }
         },
         {
